@@ -12,6 +12,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        self.title = "뷰컨트롤러 No StoryBoard"
+        
+        // view가 최상단
+        self.view.backgroundColor = .white
     }
 
 
