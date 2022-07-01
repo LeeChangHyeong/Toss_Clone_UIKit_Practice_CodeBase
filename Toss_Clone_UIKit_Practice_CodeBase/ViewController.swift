@@ -8,10 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    // 메시지 아이콘 버튼 설정
-    let messageIcon = UIBarButtonItem(image: UIImage(systemName: "message.fill"), style: .plain, target: self, action: #selector(goToMessageVC))
-    // 벨 아이콘 버튼 설정
-    let bellIcon = UIBarButtonItem(image: UIImage(systemName: "bell.fill"), style: .plain, target: self, action: #selector(goToMessageVC))
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -23,23 +20,21 @@ class ViewController: UIViewController {
         // 네비게이션 아이템 추가
         // style: .plain -> 기본
         // selector는 objc에서 사용했던 것
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "toss", style: .plain, target: self, action: #selector(goToProfileVC))
-        
-        navigationItem.rightBarButtonItems = [bellIcon, messageIcon]
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "toss", style: .plain, target: self, action: #selector(goToBellVC))
+
+        navigationItem.rightBarButtonItems = [ UIBarButtonItem(image: UIImage(systemName: "bell.fill"), style: .plain, target: self, action: #selector(goToBellVC)) ,UIBarButtonItem(image: UIImage(systemName: "message.fill"), style: .plain, target: self, action: #selector(goToMessageVC)) ]
         
     }
+    
     // 버튼 클릭했을때 사용
-    @objc fileprivate func goToProfileVC(){
-        print("press")
+    @objc fileprivate func goToBellVC(){
         // 객체 인스턴스 생성
-        let profileVC = MessageViewController()
+        let bellVC = BellViewController()
         // 푸쉬한다
-        self.navigationController?.pushViewController(profileVC, animated: true)
+        self.navigationController?.pushViewController(bellVC, animated: true)
     }
     
     @objc fileprivate func goToMessageVC(){
-        print("hi")
-        
         let messageVC = MessageViewController()
         // 푸쉬한다
         self.navigationController?.pushViewController(messageVC, animated: true)
