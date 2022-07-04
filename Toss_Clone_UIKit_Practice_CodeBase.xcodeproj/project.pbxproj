@@ -15,6 +15,9 @@
 		328D8904286EB1D800422768 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328D8903286EB1D800422768 /* MessageViewController.swift */; };
 		328D8906286F1E5600422768 /* BellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328D8905286F1E5600422768 /* BellViewController.swift */; };
 		328D8908286F1EBB00422768 /* TossViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328D8907286F1EBB00422768 /* TossViewController.swift */; };
+		32EF4C5D2872FB4C00396AE9 /* MyCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EF4C5C2872FB4B00396AE9 /* MyCollectionView.swift */; };
+		32EF4C5F2872FCEA00396AE9 /* MyCollectionViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EF4C5E2872FCEA00396AE9 /* MyCollectionViewData.swift */; };
+		32EF4C612872FD0B00396AE9 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EF4C602872FD0B00396AE9 /* MyCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		328D8903286EB1D800422768 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		328D8905286F1E5600422768 /* BellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellViewController.swift; sourceTree = "<group>"; };
 		328D8907286F1EBB00422768 /* TossViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TossViewController.swift; sourceTree = "<group>"; };
+		32EF4C5C2872FB4B00396AE9 /* MyCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionView.swift; sourceTree = "<group>"; };
+		32EF4C5E2872FCEA00396AE9 /* MyCollectionViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewData.swift; sourceTree = "<group>"; };
+		32EF4C602872FD0B00396AE9 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				328D8903286EB1D800422768 /* MessageViewController.swift */,
 				328D8905286F1E5600422768 /* BellViewController.swift */,
 				328D8907286F1EBB00422768 /* TossViewController.swift */,
+				32EF4C5C2872FB4B00396AE9 /* MyCollectionView.swift */,
+				32EF4C5E2872FCEA00396AE9 /* MyCollectionViewData.swift */,
+				32EF4C602872FD0B00396AE9 /* MyCollectionViewCell.swift */,
 				328D88F8286EA6BE00422768 /* Assets.xcassets */,
 				328D88FA286EA6BE00422768 /* LaunchScreen.storyboard */,
 				328D88FD286EA6BE00422768 /* Info.plist */,
@@ -145,9 +154,12 @@
 			files = (
 				328D8906286F1E5600422768 /* BellViewController.swift in Sources */,
 				328D88F4286EA6BD00422768 /* ViewController.swift in Sources */,
+				32EF4C612872FD0B00396AE9 /* MyCollectionViewCell.swift in Sources */,
 				328D88F0286EA6BD00422768 /* AppDelegate.swift in Sources */,
 				328D8904286EB1D800422768 /* MessageViewController.swift in Sources */,
+				32EF4C5F2872FCEA00396AE9 /* MyCollectionViewData.swift in Sources */,
 				328D88F2286EA6BD00422768 /* SceneDelegate.swift in Sources */,
+				32EF4C5D2872FB4C00396AE9 /* MyCollectionView.swift in Sources */,
 				328D8908286F1EBB00422768 /* TossViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
