@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         
         
         // view가 최상단
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .systemGray6
 
         
         // MARK: 스크롤 뷰 생성
@@ -74,11 +74,13 @@ class ViewController: UIViewController {
         
         navigationController?.navigationBar.tintColor = .systemGray
         
-        createButton()
         
+    
+        // MARK: 오토레이아웃 버튼 예시
         let changbroButton: UIButton = .init(frame: .init())
-        changbroButton.backgroundColor = .systemGray
+        changbroButton.backgroundColor = .white
         changbroButton.setTitle("이창형", for: .normal)
+        changbroButton.setTitleColor(.black, for: .normal)
         
         // SuperView 설정
         self.view.addSubview(changbroButton)
@@ -90,6 +92,17 @@ class ViewController: UIViewController {
         changbroButton.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 100).isActive = true
         changbroButton.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -80).isActive = true
         
+        let changbroButton2: UIButton = .init(frame: .init())
+        changbroButton2.backgroundColor = .white
+        changbroButton2.setTitle("이창형2", for: .normal)
+    
+        
+        self.view.addSubview(changbroButton2)
+        changbroButton2.translatesAutoresizingMaskIntoConstraints = false
+        
+        changbroButton2.topAnchor.constraint(equalTo: changbroButton.bottomAnchor).isActive = true
+        changbroButton2.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 100).isActive = true
+        changbroButton2.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -80).isActive = true
     }
     
    
