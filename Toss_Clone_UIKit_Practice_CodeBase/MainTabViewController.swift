@@ -87,7 +87,8 @@ class MainTabViewController: UITabBarController {
         tabBar.layer.cornerRadius = 25
         tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         tabBar.tintColor = .black
-        
-        
+        tabBar.backgroundColor = .systemBackground
+//        tabBar.layer.borderColor = UIColor.systemBackground.cgColor
+        tabBar.layer.borderWidth = 0.2
     }
 }
