@@ -21,25 +21,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // 윈도우 씬을 가져온다
         // 가져온 친구(UIWindowScene)가 비어있으면 리턴해준다
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        
-        // 윈도우 크기 설정
-        window = UIWindow(frame: UIScreen.main.bounds)
-        
-        // 뷰컨트롤러 인스턴스 가져오기
-        let vc = ViewController()
-        
-        // 네비게이션 컨트롤러 설정
-        // 스택으로 쌓이는데 ViewController를 먼서 쌓음
-        let navVC = UINavigationController(rootViewController: vc)
-        
-        // 뿌리 뷰 컨트롤러를 설정
-        window?.rootViewController = navVC
-        
-        // 설정한 윈도우를 보이게 끔 설정
-        window?.makeKeyAndVisible()
-        
-        // 윈도우 씬 설정
+        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
+        // 제일 처음 시작하는 화면
+        window?.rootViewController = MainTabViewController()
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -72,4 +58,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
 }
+
 
